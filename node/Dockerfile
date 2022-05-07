@@ -12,6 +12,6 @@ COPY  index.js package.json ./
 
 RUN npm install
 
-EXPOSE 3000
+#EXPOSE 3000
 
-ENTRYPOINT [ "dockerize", "-wait", "tcp://db:3306", "-timeout", "20s", "node","index.js" ]
+#ENTRYPOINT [ "dockerize", "-wait", "tcp://db:3306", "-timeout", "20s", "node","index.js" ]
