@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
         
         res.send(output);
     });
-    
+    connection.end();
 });
 
 app.listen(port, ()=>{
